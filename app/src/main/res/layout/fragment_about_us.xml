@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_top_fragment_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/red_main"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblAboutUs"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/noto_sans_bold"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Hakkımızda"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/layout_top_fragment_about_us"
+       android:orientation="vertical">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:fontFamily="@font/noto_sans_bold"
+           android:gravity="center"
+           android:paddingLeft="10dp"
+           android:layout_marginTop="30dp"
+           android:text="Emrullah ACAR"
+           android:textColor="@color/gray_dark2"
+           android:textSize="18dp" />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:fontFamily="@font/noto_sans_bold"
+           android:gravity="center"
+           android:paddingLeft="10dp"
+           android:layout_marginTop="10dp"
+           android:text="0552 322 6247"
+           android:textColor="@color/gray_dark2"
+           android:textSize="18dp" />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:fontFamily="@font/noto_sans_bold"
+           android:gravity="center"
+           android:paddingLeft="10dp"
+           android:layout_marginTop="10dp"
+           android:text="emrullah.acar444@gmail.com"
+           android:textColor="@color/gray_dark2"
+           android:textSize="18dp" />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:fontFamily="@font/noto_sans_bold"
+           android:gravity="center"
+           android:paddingLeft="10dp"
+           android:layout_marginTop="20dp"
+           android:text= "YAZILIM GELİŞTİRİCİ"
+           android:textColor="@color/gray_dark2"
+           android:textSize="18dp" />
+   </LinearLayout>
+
+</RelativeLayout>

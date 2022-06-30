@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="106dp"
+        app:srcCompat="@drawable/admin_icon_2" />
+
+    <TextView
+        android:id="@+id/lblAdminLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/login_admin"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:textColor="@color/gray_dark"/>
+
+    <EditText
+        android:id="@+id/tbUsernameLoginAdmin"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblAdminLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:autofillHints=""
+        android:background="@drawable/text_box_design"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textEmailAddress"
+        android:maxLength="50"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/tbPasswordLoginAdmin"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbUsernameLoginAdmin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/text_box_design"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnLoginAdmin"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tbPasswordLoginAdmin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_button_design"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ansi.busticketsalesautomation">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BusTicketSalesAutomation">
+        <activity
+            android:name=".CompanyChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CompanySettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminMyProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminCampaignsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminTicketSummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminReservationSeatSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminReservationExpeditionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminReservationTravelInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminTicketsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminCompaniesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyTicketOperationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyCustomerInfoForReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyTicketSummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyTicketReservationSeatSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyTicketReservationExpeditionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyTicketReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PassengersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyExpeditionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyAddExpeditionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

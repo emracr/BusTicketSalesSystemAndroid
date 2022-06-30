@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_bottom"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ansi.busticketsalesautomation.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/findTicketFragment"
+        android:name="com.ansi.busticketsalesautomation.FindTicketFragment"
+        android:label="fragment_find_ticket"
+        tools:layout="@layout/fragment_find_ticket" />
+    <fragment
+        android:id="@+id/expeditionFragment"
+        android:name="com.ansi.busticketsalesautomation.ExpeditionFragment"
+        android:label="fragment_expedition"
+        tools:layout="@layout/fragment_expedition" />
+    <fragment
+        android:id="@+id/myAccountFragment"
+        android:name="com.ansi.busticketsalesautomation.MyAccountFragment"
+        android:label="fragment_my_account"
+        tools:layout="@layout/fragment_my_account" />
+    <fragment
+        android:id="@+id/seatSelectionFragment"
+        android:name="com.ansi.busticketsalesautomation.SeatSelectionFragment"
+        android:label="fragment_seat_selection"
+        tools:layout="@layout/fragment_seat_selection" />
+    <fragment
+        android:id="@+id/ticketSummaryFragment"
+        android:name="com.ansi.busticketsalesautomation.TicketSummaryFragment"
+        android:label="fragment_ticket_summary"
+        tools:layout="@layout/fragment_ticket_summary" />
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.ansi.busticketsalesautomation.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" />
+    <fragment
+        android:id="@+id/ticketPurchasedSuccessfullyFragment"
+        android:name="com.ansi.busticketsalesautomation.TicketPurchasedSuccessfullyFragment"
+        android:label="fragment_ticket_purchased_successfully"
+        tools:layout="@layout/fragment_ticket_purchased_successfully" />
+    <fragment
+        android:id="@+id/myTicketsFragment"
+        android:name="com.ansi.busticketsalesautomation.MyTicketsFragment"
+        android:label="fragment_my_tickets"
+        tools:layout="@layout/fragment_my_tickets" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.ansi.busticketsalesautomation.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.ansi.busticketsalesautomation.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/campaignsFragment"
+        android:name="com.ansi.busticketsalesautomation.CampaignsFragment"
+        android:label="fragment_campaigns"
+        tools:layout="@layout/fragment_campaigns" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.ansi.busticketsalesautomation.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+</navigation>

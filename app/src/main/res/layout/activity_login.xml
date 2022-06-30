@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="106dp"
+        app:srcCompat="@drawable/user_logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:textColor="@color/gray_dark"/>
+
+    <EditText
+        android:id="@+id/tbEmailLogin"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:autofillHints=""
+        android:background="@drawable/text_box_design"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:maxLength="50"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/tbPasswordLogin"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbEmailLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/text_box_design"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tbPasswordLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_button_design"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_marginTop="30dp"
+        android:text="Hesabınız yok mu ?"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/lblRedirectRegisterLogin"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="80dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:text="Üye ol"
+        android:textAlignment="textStart"
+        android:textColor="@color/red_main"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblRedirectCompanyLogin"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="Firma Giriş"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminUserActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_top_activity_admin_users"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/red_main"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblUsers"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/noto_sans_bold"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Kullanıcılar"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_user_search_filter_activity_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/layout_top_activity_admin_users"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_phone_number_users_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/tbPhoneNumberSearchUserAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:autofillHints=""
+                android:background="@drawable/text_box_design"
+                android:ems="10"
+                android:hint="Telefon Numarası"
+                android:inputType="number"
+                android:maxLength="11"
+                android:minHeight="48dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_email_users_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/tbEmailSearchUserAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:autofillHints=""
+                android:background="@drawable/text_box_design"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:maxLength="50"
+                android:minHeight="48dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnFindUserAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_design"
+            android:text="Sorgula"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/usersLayoutScrollAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_user_search_filter_activity_admin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ticket_summary_background"
+        android:layout_marginBottom="15dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/usersLayoutActivityUsersAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" />
+
+    </ScrollView>
+
+
+</RelativeLayout>

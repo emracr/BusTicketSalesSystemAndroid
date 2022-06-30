@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompanyTicketOperationsActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_top_activity_company_ticket_operations"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/red_main"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblCompanyTicketOperations"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/noto_sans_bold"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Bilet İşlemleri"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblShowFiltersActivityTicketOperations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_top_activity_company_ticket_operations"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Filtreyi Göster"
+        android:visibility="gone"
+        android:textSize="15dp"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:id="@+id/layout_ticket_filters_activity_ticket_operations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/lblShowFiltersActivityTicketOperations"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_customer_phone_number_company_ticket_operations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout_phone_number_company_ticket_operations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/pbPhone"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/telephone" />
+
+                <EditText
+                    android:id="@+id/tbPhoneNumberCompanyTicketOperations"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/pbPerson"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:autofillHints=""
+                    android:background="@drawable/text_box_design"
+                    android:ems="10"
+                    android:hint="Telefon Numarası"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:minHeight="48dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_city_from_and_city_to_activity_company_ticket_operations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_customer_phone_number_company_ticket_operations"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout_location_from_activity_company_ticket_operations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/pbTravelFrom"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/location_from" />
+
+                <Spinner
+                    android:id="@+id/spnTravelFromCompanyTicketOperations"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/spinner_design_find_expedition"
+                    android:minHeight="48dp"
+                    android:paddingLeft="8dp"
+                    android:textSize="10dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_location_to_activity_company_ticket_operations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/pbTravelTo"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/location_to" />
+
+                <Spinner
+                    android:id="@+id/spnTravelToCompanyTicketOperations"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/pbTravelTo"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/spinner_design_find_expedition"
+                    android:minHeight="48dp"
+                    android:paddingLeft="8dp"
+                    android:textSize="10dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_travel_date_activity_company_ticket_operations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_city_from_and_city_to_activity_company_ticket_operations"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/pbTravelDate"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/calendar" />
+
+            <EditText
+                android:id="@+id/tbTravelDateCompanyTicketOperationsActivity"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/pbTravelDate"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="7dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Seyahat Tarihi"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:textColorHint="@color/black"
+                android:background="@drawable/text_box_design"
+                android:paddingLeft="15dp"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_travel_hour_activity_ticket_operations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_travel_date_activity_company_ticket_operations"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/pbTravelHour"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/clock_3" />
+
+            <EditText
+                android:id="@+id/tbTravelHourTicketOperationsActivity"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/pbTravelHour"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="7dp"
+                android:hint="Sefer Saati"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:background="@drawable/text_box_design"
+                android:paddingLeft="15dp"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnFindTicketsCompanyTicketOperations"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/layout_travel_hour_activity_ticket_operations"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_design"
+            android:text="Sorgula"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/customerTicketsCompanyTicketOperationsLayoutScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_ticket_filters_activity_ticket_operations"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/customerTicketsLayoutActivityCompanyTicketOperations"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:paddingBottom="10dp"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+</RelativeLayout>

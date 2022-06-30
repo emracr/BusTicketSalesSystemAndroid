@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_top_fragment_payment"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/red_main"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblPayment"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/noto_sans_bold"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Ödeme"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="365dp"
+        android:layout_height="500dp"
+        android:layout_below="@+id/layout_top_fragment_payment"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/payment_layout_background"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/mastercard_visa" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="KART NUMARASI"
+            android:textSize="13dp" />
+
+        <EditText
+            android:id="@+id/tbCardNumber"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/payment_text_box_design"
+            android:ems="10"
+            android:fontFamily="@font/roboto_bold"
+            android:inputType="number"
+            android:maxLength="16"
+            android:minHeight="48dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="KART SAHİBİ"
+            android:textSize="13dp" />
+
+        <EditText
+            android:id="@+id/tbCardHolder"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/payment_text_box_design"
+            android:ems="10"
+            android:fontFamily="@font/roboto_bold"
+            android:inputType="textPersonName"
+            android:maxLength="40"
+            android:minHeight="48dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="SON KULLANIM TARİHİ"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="CCV"
+                android:textAlignment="textEnd"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spnMonthNumberPaymentFragment"
+                android:layout_width="80dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/payment_spinner_design"
+                android:minHeight="48dp"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingLeft="8dp"
+                android:textSize="14dp" />
+
+            <Spinner
+                android:id="@+id/spnYearPaymentFragment"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/payment_spinner_design"
+                android:minHeight="48dp"
+                android:paddingLeft="10dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/tbCCVPaymentFragment"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:background="@drawable/payment_text_box_design"
+                android:ems="10"
+                android:fontFamily="@font/roboto_bold"
+                android:inputType="number"
+                android:maxLength="3"
+                android:minHeight="48dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginStart="30dp"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCompletePaymentFragment"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/login_button_design"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            android:paddingLeft="105dp"
+            android:text="Ödemeyi Onayla"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

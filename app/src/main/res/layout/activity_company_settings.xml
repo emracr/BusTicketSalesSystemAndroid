@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompanySettingsActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_top_activity_company_settings"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/red_main"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/noto_sans_bold"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Ayarlar"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_user_icon_and_username_activity_settings_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/layout_top_activity_company_settings"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:src="@drawable/user_logo" />
+
+        <TextView
+            android:id="@+id/lblUsernameActivityCompanySettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/gray_dark2"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_main_activity_settings_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/layout_user_icon_and_username_activity_settings_company"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnMyProfileActivitySettingsCompany"
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tbPasswordLogin"
+            android:layout_gravity="center"
+            android:background="@drawable/my_profile_button_design"
+            android:text="Profil Bilgilerim"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btnChangePasswordActivitySettingsCompany"
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tbPasswordLogin"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/my_profile_button_design"
+            android:text="Parolamı Değiştir"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btnExitActivitySettingsCompany"
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/exit_button_design"
+            android:drawableStart="@drawable/ic_exit"
+            android:drawablePadding="10dp"
+            android:paddingLeft="115dp"
+            android:text="Çıkış Yap"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

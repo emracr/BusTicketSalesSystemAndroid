@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_top_activity_admin_customer_info"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/red_main"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblCustomerInfo"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/noto_sans_bold"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Müşteri Bilgileri"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/tbFirstNameReservationAdminCustomerInfo"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_top_activity_admin_customer_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:autofillHints=""
+        android:background="@drawable/text_box_design"
+        android:ems="10"
+        android:hint="@string/first_name"
+        android:inputType="text"
+        android:maxLength="30"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/tbLastNameReservationAdminCustomerInfo"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbFirstNameReservationAdminCustomerInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/text_box_design"
+        android:ems="10"
+        android:hint="@string/last_name"
+        android:inputType="text"
+        android:maxLength="30"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/tbEmailReservationAdminCustomerInfo"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbLastNameReservationAdminCustomerInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/text_box_design"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:maxLength="50"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/tbPhoneNumberReservationAdminCustomerInfo"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbEmailReservationAdminCustomerInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/text_box_design"
+        android:ems="10"
+        android:hint="@string/phone"
+        android:inputType="numberSigned"
+        android:maxLength="11"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16dp" />
+
+
+    <Button
+        android:id="@+id/btnGoToTravelInfoAdminReservation"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tbPhoneNumberReservationAdminCustomerInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_button_design"
+        android:text="Devam et"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+</RelativeLayout>

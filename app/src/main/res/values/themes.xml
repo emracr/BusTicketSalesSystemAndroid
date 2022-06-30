@@ -1,0 +1,120 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BusTicketSalesAutomation" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/red_main</item>
+        <item name="colorPrimaryVariant">@color/red_main</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowAnimationStyle">@style/GenderSelectionDialogAnimation</item>
+        <item name="android:windowAnimationStyle" tools:ignore="DuplicateDefinition">@style/ExitDialogAnimation</item>
+        <item name="android:windowAnimationStyle" tools:ignore="DuplicateDefinition">@style/TicketCancelDialogAnimation</item>
+        <item name="android:windowAnimationStyle" tools:ignore="DuplicateDefinition">@style/ExitDialogAnimation</item>
+        <item name="android:windowAnimationStyle" tools:ignore="DuplicateDefinition">@style/ExpeditionRemoveDialogAnimation</item>
+        <item name="android:windowAnimationStyle" tools:ignore="DuplicateDefinition">@style/ExpeditionEditDialogAnimation</item>
+        <item name="android:windowAnimationStyle" tools:ignore="DuplicateDefinition">@style/PassengersListDialogAnimation</item>
+        <item name="android:windowAnimationStyle" tools:ignore="DuplicateDefinition">@style/AddCompanyDialogAnimation</item>
+        <item name="android:windowAnimationStyle" tools:ignore="DuplicateDefinition">@style/DeleteCompanyDialogAnimation</item>
+        <item name="android:windowAnimationStyle" tools:ignore="DuplicateDefinition">@style/UpdateCompanyDialogAnimation</item>
+        <item name="android:windowAnimationStyle" tools:ignore="DuplicateDefinition">@style/DeleteUserDialogAnimation</item>
+        <item name="android:windowAnimationStyle" tools:ignore="DuplicateDefinition">@style/UpdateUserDialogAnimation</item>
+        <item name="android:windowAnimationStyle" tools:ignore="DuplicateDefinition">@style/CampaignRemoveDialogAnimation</item>
+        <item name="android:windowAnimationStyle" tools:ignore="DuplicateDefinition">@style/CampaignAddDialogAnimation</item>
+        <item name="android:windowAnimationStyle" tools:ignore="DuplicateDefinition">@style/CampaignUpdateDialogAnimation</item>
+        <item name="android:windowAnimationStyle" tools:ignore="DuplicateDefinition">@style/AddAdminDialogAnimation</item>
+        <item name="android:windowAnimationStyle" tools:ignore="DuplicateDefinition">@style/DeleteAdminDialogAnimation</item>
+
+    </style>
+
+    <style name="GenderSelectionDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="ExitDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="TicketCancelDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="ExitSessionDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="ExpeditionRemoveDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="ExpeditionEditDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="PassengersListDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="AddCompanyDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="DeleteCompanyDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="UpdateCompanyDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="DeleteUserDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="UpdateUserDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="CampaignRemoveDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="CampaignAddDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="CampaignUpdateDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="AddAdminDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="DeleteAdminDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+</resources>

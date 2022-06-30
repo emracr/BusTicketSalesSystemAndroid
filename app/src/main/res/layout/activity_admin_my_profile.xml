@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminMyProfileActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_top_activity_my_profile_admin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/red_main"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/noto_sans_bold"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Proil Bilgilerim"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/layout_top_activity_my_profile_admin"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/tbFirstNameActivityMyProfileAdmin"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:autofillHints=""
+            android:background="@drawable/text_box_design"
+            android:ems="10"
+            android:hint="@string/first_name"
+            android:inputType="text"
+            android:maxLength="30"
+            android:minHeight="48dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/tbLastNameActivityMyProfileAdmin"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:autofillHints=""
+            android:background="@drawable/text_box_design"
+            android:ems="10"
+            android:hint="@string/last_name"
+            android:inputType="text"
+            android:maxLength="30"
+            android:minHeight="48dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/tbUserNameActivityMyProfileAdmin"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:autofillHints=""
+            android:background="@drawable/text_box_design"
+            android:ems="10"
+            android:hint="@string/username"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:minHeight="48dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btnUpdateMyProfileAdmin"
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/layout_gender"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/login_button_design"
+            android:text="Güncelle"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

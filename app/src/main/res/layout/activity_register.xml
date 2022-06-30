@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/lblRegisterInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Yeni Hesap Oluştur"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:background="@color/red_main"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/tbFirstNameRegister"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblRegisterInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:autofillHints=""
+        android:background="@drawable/text_box_design"
+        android:ems="10"
+        android:hint="@string/first_name"
+        android:inputType="text"
+        android:maxLength="30"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/tbLastNameRegister"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbFirstNameRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/text_box_design"
+        android:ems="10"
+        android:hint="@string/last_name"
+        android:inputType="text"
+        android:maxLength="30"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/tbEmailRegister"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbLastNameRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/text_box_design"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:maxLength="50"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/tbPhoneRegister"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbEmailRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/text_box_design"
+        android:ems="10"
+        android:hint="@string/phone"
+        android:inputType="numberSigned"
+        android:maxLength="11"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/tbPasswordRegister"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbPhoneRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/text_box_design"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/tbPasswordConfirmRegister"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbPasswordRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/text_box_design"
+        android:ems="10"
+        android:hint="@string/password_confirm"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_gender"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tbPasswordConfirmRegister"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_box_design"
+        android:orientation="vertical"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/lblGenderRegister"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/gender"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/lblGenderRegister"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginBottom="-5dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbMaleRegister"
+                android:layout_width="132dp"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_male"
+                android:textSize="13dp" />
+
+            <RadioButton
+                android:id="@+id/rbFemaleRegister"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_female"
+                android:textSize="13dp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCompleteRegister"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/layout_gender"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_button_design"
+        android:text="@string/register_complete"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+</RelativeLayout>

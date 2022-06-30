@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Biletimm</string>
+    <string name="email">Email</string>
+    <string name="password">Parola</string>
+    <string name="username">Kullanıcı adı</string>
+    <string name="login">Giriş</string>
+    <string name="login_company">Firma Giriş</string>
+    <string name="login_admin">Admin Giriş</string>
+    <string name="first_name">Ad</string>
+    <string name="last_name">Soyad</string>
+    <string name="phone">Telefon numarası</string>
+    <string name="password_confirm">Parola tekrar</string>
+    <string name="register_complete">Kaydı tamamla</string>
+    <string name="gender">Cinsiyet</string>
+    <string name="gender_male">Erkek</string>
+    <string name="gender_female">Kadın</string>
+    <string name="ticket_find">Bilet bul</string>
+    <string name="my_tickets">Biletlerim</string>
+    <string name="campaigns">Kampanyalar</string>
+    <string name="about_us">Hakkımızda</string>
+    <string name="get_travels">Sorgula</string>
+    <string name="addCompany"><u>Yen Firma Ekle</u></string>
+    <string name="addCampaign"><u>Yen Kampanya Ekle</u></string>
+    <string name="addAdmin"><u>Admin Ekle</u></string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
