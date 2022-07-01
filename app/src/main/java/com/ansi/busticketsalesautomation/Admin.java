@@ -16,6 +16,7 @@ public class Admin {
         setPassword(password);
     }
 
+
     public Admin(String firstName, String lastName, String userName, String password) {
         setFirstName(firstName);
         setLastName(lastName);
