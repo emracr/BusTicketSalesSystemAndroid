@@ -1,3 +1,17 @@
+<h1 align="center">Bus Ticket Sales System</h1>
+
+<p>Platform: <b>Mobil (Android)</b></p>
+<p>Backend: <b>Java</b></p>
+<p>Database: <b>SQLite</b></p>
+
+<h3 align="left">Languages and Tools:</h3>
+<p align="left" witdh="320" height="320">
+  <img width="175" src="https://github.com/user-attachments/assets/a6e23085-ef35-4bc4-8c58-a4e34d9bb5d7" alt="Java"> 
+  <img width="175" src="https://github.com/user-attachments/assets/fb09b79a-4782-470b-8a27-40fc23485161" alt="SQLite"> 
+</p>
+
+<h3 align="left">Project Images</h3>
+
 | Splash Screen | Login | Register |
 | --- | --- | --- |
 | ![Splash Screen](https://github.com/user-attachments/assets/05c0cff3-87ad-4756-bbca-cbfce65b4f36) | ![Login](https://github.com/user-attachments/assets/0870fbb8-f72e-429e-98b0-5093820b6c28) | ![Register](https://github.com/user-attachments/assets/20ec9082-39c3-4161-8ab4-309f35128bb7) |
