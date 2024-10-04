@@ -6,8 +6,8 @@
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left" witdh="320" height="320">
-  <img width="175" src="https://github.com/user-attachments/assets/a6e23085-ef35-4bc4-8c58-a4e34d9bb5d7" alt="Java"> 
-  <img width="175" src="https://github.com/user-attachments/assets/fb09b79a-4782-470b-8a27-40fc23485161" alt="SQLite"> 
+  <img width="100" src="https://github.com/user-attachments/assets/a6e23085-ef35-4bc4-8c58-a4e34d9bb5d7" alt="Java"> 
+  <img width="100" src="https://github.com/user-attachments/assets/fb09b79a-4782-470b-8a27-40fc23485161" alt="SQLite"> 
 </p>
 
 <h3 align="left">Project Images</h3>
